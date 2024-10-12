@@ -18,3 +18,23 @@ The findings reveal significant trends, such as the dominance of brands like Mie
 
 ## Language & Tools
 The scripts are developed using **Python**, and the data visualization and analysis are conducted with **Power BI**.
+
+## Notebook and Data Files
+
+### Data Files
+- **iHerb_hair_care_raw_dataset.csv**: This CSV file contains the web scraped product information, including details on various hair care products from iHerb.
+
+- **iHerb_hair_care_clean_dataset.csv**: This file contains the cleansed data, prepared for visualization and analysis.
+
+- **product_name_split.csv**: A dataset containing split product names for more detailed analysis.
+
+- **reviews_raw_dataset.csv**: This file includes the scraped customer reviews.
+
+- **reviews_clean_dataset.csv**: A cleansed dataset of customer reviews, intended for generating word clouds and further analysis.
+
+### Notebooks
+- **01_data_extraction_web_scraping.ipynb**: This notebook performs web scraping to create the `iHerb_hair_care_raw_dataset.csv` output.
+
+- **02_data_preprocessing_exploration.ipynb**: A Jupyter notebook for cleaning and preprocessing the `iHerb_hair_care_raw_dataset.csv`, as well as performing exploratory data analysis (EDA). The output is the `iHerb_hair_care_clean_dataset.csv`, which can be used for developing dashboards with Power BI.
+
+- **03_sentiment_analysis_VADER_RoBERTa.ipynb**: This notebook focuses on analyzing customer reviews using Natural Language Processing (NLP) techniques to gauge sentiment and consumer behavior.
