@@ -38,3 +38,21 @@ The scripts are developed using **Python**, and the data visualization and analy
 - **02_data_preprocessing_exploration.ipynb**: A Jupyter notebook for cleaning and preprocessing the `iHerb_hair_care_raw_dataset.csv`, as well as performing exploratory data analysis (EDA). The output is the `iHerb_hair_care_clean_dataset.csv`, which can be used for developing dashboards with Power BI.
 
 - **03_sentiment_analysis_VADER_RoBERTa.ipynb**: This notebook focuses on analyzing customer reviews using Natural Language Processing (NLP) techniques to gauge sentiment and consumer behavior.
+
+## Web Driver
+
+### Edge Browser Driver
+This project utilizes the Microsoft Edge browser for web scraping with Selenium. To facilitate this, the appropriate Edge WebDriver must be installed and configured.
+
+- **Driver File**: The Edge browser driver is included in this repository for reference. Ensure that the driver version matches your installed version of the Edge browser.
+
+### Setup Instructions
+1. **Download Edge WebDriver**: If you need to update or install the driver, you can download the correct version from the [Microsoft Edge WebDriver page](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
+
+2. **Configure PATH**: Ensure that the WebDriver executable is in your system's PATH, or specify the driver path directly in your scripts.
+   
+   Example:
+   ```python
+   from selenium import webdriver
+
+   driver = webdriver.Edge(executable_path='path/to/msedgedriver')
